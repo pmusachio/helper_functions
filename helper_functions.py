@@ -78,10 +78,9 @@ def cramer_v( x, y ):
 
 def jupyter_settings():
     %matplotlib inline
-    %pylab inline
     
-    plt.style.use( 'bmh' )
-    plt.rcParams['figure.figsize'] = [25, 12]
+    plt.style.use( 'ggplot')
+    plt.rcParams['figure.figsize'] = [24, 9]
     plt.rcParams['font.size'] = 24
     
     display( HTML( '<style>.container { width:100% !important; }</style>') )
@@ -90,3 +89,5 @@ def jupyter_settings():
     pd.set_option( 'display.expand_frame_repr', False )
     
     sns.set()
+
+jupyter_settings()
